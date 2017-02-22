@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="f28519e8-752b-4790-b2ef-66cd3028358b" Version="1.2" Language="en-US" Publisher="IMM" />
+    <DisplayName>EntitiesToDTOs - DTO Generator VS2015</DisplayName>
+    <Description xml:space="preserve">EntitiesToDTOs is an Entity Framework DTO generator used as an VSPackage for Visual Studio. You'll no longer have to create DTOs for all your entities!
+Support Files:  .edmx , .edml</Description>
+    <MoreInfo>https://entitiestodtos.codeplex.com/</MoreInfo>
+    <GettingStartedGuide>https://entitiestodtos.codeplex.com/</GettingStartedGuide>
+    <Icon>bolt.ico</Icon>
+    <PreviewImage>bolt.ico</PreviewImage>
+    <Tags>DTO, Entity FrameWork, ADO.NET, VSPackage, automation </Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.12.0" DisplayName="Visual Studio MPF 12.0" d:Source="Installed" Version="[12.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
